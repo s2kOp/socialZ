@@ -1,0 +1,156 @@
+.wrapper{
+    height: 100vh;
+    background-color: rgb(226, 234, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 850px;
+    height: 450px;
+    display: flex;
+}
+.welcomeText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    margin-right: 7px;
+}
+h2{
+    font-size: 4em;
+    color: rgb(43, 106, 194);
+    margin-left: 10px;
+}
+p{
+    font-size: 1.3em;
+    margin-left: 10px;
+    font-weight: 400;
+    font-family: sans-serif;
+}
+.formBox{
+    width: 400px;
+}
+.inputForm{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    border-radius: 8px;
+    background-color: white;
+    border: none;
+    padding: 15px 10px;
+}
+.inputFields{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    position: relative;
+}
+input{
+    width: 100%;
+    height: 45px;
+    font-size: 1.1em;
+    padding: 10px 18px;
+    border-radius: 15px;
+    border: 1px solid rgba(81, 76, 76, 0.628)
+}
+
+.loginBtn{
+    height: 45px;
+    border-radius: 12px;
+    font-size: 20px;
+    background-color: rgb(43, 106, 194);
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+.loginBtn:hover{
+    background-color:  rgba(23, 71, 137, 0.989);
+    cursor: pointer;
+}
+
+
+
+.createBtn{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+}
+.createBtn button{
+    width: 220px;
+    font-size: 1.1em;
+    border-radius: 12px;
+    border: none;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(71, 176, 71);
+}
+.createBtn button:hover{
+    background-color: rgb(33, 110, 33);
+    cursor: pointer;
+}
+
+.eyeBtn{
+    all: unset;
+    position: absolute;
+    bottom: 7px;
+    right: 5px;
+}
+.eyeBtn:hover{
+    cursor: pointer;
+}
+.errorMsg{
+    border: 2px solid;
+    margin-bottom: 3px;
+    height: 50px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    background-color: rgba(111, 178, 232, 0.333);
+    border: none;
+    border-radius: 8px;
+}
+.rightBox{
+    margin-top: 70px;
+}
+
+.gIcon{
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
+    position: absolute;
+    right: 135px;
+    top: 5px;
+}
+.googleBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+    position: relative;
+}
+.googleBtn button{
+    width: 150px;
+    height: 40px;
+    text-align: left;
+    font-size: 18px;
+    padding: 0px 8px;
+    font-family: 'Poppins';
+    border: none;
+    font-weight: 500;
+    color: rgb(43, 106, 194);
+    background-color: rgb(226, 234, 245);
+    cursor: pointer;
+    transition: 0.3s ease-in all;
+}
+.googleBtn button:hover{
+    box-shadow: 1px 2px 3px black;
+}

@@ -1,0 +1,71 @@
+
+
+.wrapper{
+    width: 300px;
+    overflow-y: scroll;
+    max-height: 698px;
+    margin-top: 50px;
+    position: fixed;
+}
+.wrapper::-webkit-scrollbar{
+    width: 5px ;
+}
+.wrapper::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background-color: rgba(145, 148, 148, 0.299);
+}
+.wrapper::-webkit-scrollbar-thumb{
+    background-color: rgba(145, 148, 148, 0.639);
+    height: 10px;
+}
+.iconList{
+    padding: 25px 29px;
+    width: 100%;
+}
+.iconList ul li{
+    margin-bottom: 20px;
+    list-style: none;
+    display: flex;
+}
+.iconList span{
+    font-size: 18px;
+    margin-left: 5px;
+    
+}
+.iconList button{
+    font-size: 14px;
+    padding: 7px 10px;
+    width: 120px;
+    border: none;
+    cursor: pointer;
+}
+.iconList button:hover{
+    background-color: rgba(107, 111, 111, 0.242);
+}
+.hrLine{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+hr{
+    width: 250px;
+}
+.usersList{
+    padding: 25px 29px;
+    width: 100%;
+}
+.usersList ul li{
+    margin-bottom: 20px;
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+.usersList span{
+    font-size: 16px;
+    margin-left: 10px;  
+}
+.usersList img{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+}
