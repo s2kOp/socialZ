@@ -34,7 +34,6 @@ export default function feed({profPic}) {
     }));
     setPosts(allPosts);
   
-    // Sync numLike and likedPosts
     if(user){
       const likesObj = {};
       const likedObj = {};
@@ -140,7 +139,6 @@ export default function feed({profPic}) {
           }
         }
   
-        // Fetch posts only after user is set
         fetchPosts(); 
       }
     });
@@ -151,7 +149,6 @@ export default function feed({profPic}) {
 
   useEffect(() => {
     const likeUpdate = async () => {
-      // Loop over all post IDs in numLike
       for (const postId in numLike) {
         const likeCount = numLike[postId];
   
