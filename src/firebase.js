@@ -17,6 +17,7 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_APP_ID,
   measurementId: import.meta.env.VITE_MEASUREMENT_ID
 };
+console.log("API KEY:", import.meta.env.VITE_API_KEY);
 
 
 // Initialize Firebase
@@ -28,7 +29,7 @@ export const db = getFirestore(app);
 provider.setCustomParameters({
   prompt: "select_account", // 👈 forces Google account chooser
 });
-export {provider};
+export {provider,app};
 
 export const firebaseSignIn = (auth, email, password) => {
     return signInWithEmailAndPassword(auth, email, password);

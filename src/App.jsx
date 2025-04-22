@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Home from "./pages/home/Home.jsx"
 import LogIn from "./pages/login/LogIn.jsx"
+import ForgotPassword from "./pages/login/ForgotPassword.jsx"
 import { setDoc, doc } from "firebase/firestore";
 import { db } from './firebase';
 import CreateAcc from "./pages/make/CreateAcc.jsx"
@@ -35,7 +36,7 @@ function App() {
         <Route path="/" element={<LogIn loggedIn={loggedIn} setLoggedIn={setLoggedIn} email = {email} setEmail = {setEmail}
                                   password = {password} setPassword = {setPassword} setProfPic={setProfPic} saveUserData={saveUserData} />} />
         <Route path="/home" element={<Home setStorePic = {setStorePic} profPic = {profPic} setProfPic = {setProfPic}/>} />
-
+        <Route path="/forgot-password" element={<ForgotPassword />} />
       </Routes>
     </BrowserRouter>
    

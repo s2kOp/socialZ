@@ -74,17 +74,8 @@ input{
     cursor: pointer;
 }
 
-a{
-    text-align: center;
-    font-size: 16px;
-    color: rgb(43, 106, 194);
-    font-family: sans-serif;
-    font-weight: 500;
-    margin: 10px 0;
-}
-a:hover{
-    color:  rgba(23, 71, 137, 0.989);
-}
+
+
 
 .createBtn{
     width: 100%;

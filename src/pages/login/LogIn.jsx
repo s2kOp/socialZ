@@ -86,7 +86,7 @@ export default function LogIn({setLoggedIn,email,setEmail,password,setPassword,s
               <button className = {style.eyeBtn} onClick={() => setShowPassword(!showPassword)} type="button" >{showPassword?<VisibilityOffIcon/>:<VisibilityIcon/>}</button>
             </div>
             <button className = {style.loginBtn} type="submit">Log In</button>
-            <a href = "#">Forgot Password?</a>
+            <p onClick={() => navigate('/forgot-password')} style={{ cursor: 'pointer', color: 'blue', textAlign: 'center', fontSize: '14px' }}>Forgot Password?</p>
             <div className = {style.createBtn}>
               <button type="button" onClick = {handleCreateAcc}>Create Account</button>
             </div>
