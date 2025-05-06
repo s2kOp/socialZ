@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import {auth,db} from "../../firebase";
 import { updateDoc,getDoc, doc } from "firebase/firestore";
-import style from "./TopBar.module.css";
+import style from "./topBar.module.css";
 import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import MessageIcon from '@mui/icons-material/Message';
